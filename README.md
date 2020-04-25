@@ -8,3 +8,6 @@ Here is a configuration guide for RavenDB in Docker for Windows
 
 [Getting started with RavenDB in Docker for Windows](https://rubenmamo.com/getting-started-with-ravendb-in-docker-for-windows)
 
+### References
+* https://ravendb.net/docs/article-page/4.2/csharp/start/getting-started
+* https://www.nuget.org/packages/RavenDB.Client/

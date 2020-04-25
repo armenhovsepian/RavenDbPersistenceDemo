@@ -10,4 +10,11 @@ Here is a configuration guide for RavenDB in Docker for Windows
 
 ### References
 * https://ravendb.net/docs/article-page/4.2/csharp/start/getting-started
-* https://www.nuget.org/packages/RavenDB.Client/
+
+
+### Nuget Package
+* [RavenDB.Client](https://www.nuget.org/packages/RavenDB.Client/)
+
+
+Remember to run RavenDB image from docker before starting the app otherwise, you won't have access to RavenDB.
+[ravendb](https://hub.docker.com/r/ravendb/ravendb/)

@@ -27,20 +27,16 @@ namespace RavenDbPersistenceConsole
 
             var count = await personService.Count();
             if (count == 0)
-                for (int id = 0; id < 10; id++)
-                {
+                for (int id = 1; id =< 10; id++)
                     await personService.Create(new Person { Id = id, FirstName = $"FirstName {id}", LastName = $"LastName {id}" });
-                }
-
-
+                
             var persons = await personService.GetAll();
             foreach (var person in persons)
-            {
                 Console.WriteLine(person.FirstName + "\t" + person.LastName);
-            }
+            
 
             // Ok
-            //var person = await personService.Get();
+            //var person = await personService.Get(3);
 
             // Ok
             //await personService.Delete(3);
